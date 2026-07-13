@@ -1,0 +1,39 @@
+{
+  "name": "physics-research",
+  "version": "0.1.0",
+  "description": "Subject-agnostic physics research workflow: read / explore / production modes, rigorous derivation & verification, PRL figures, phased git, adversarial review.",
+  "author": {
+    "name": "Yamauch17",
+    "url": "https://github.com/Yamauch17"
+  },
+  "homepage": "https://github.com/Yamauch17/physics-research-skills",
+  "repository": "https://github.com/Yamauch17/physics-research-skills",
+  "license": "MIT",
+  "keywords": [
+    "physics",
+    "research",
+    "workflow",
+    "skills",
+    "derivation",
+    "verification",
+    "reproducibility"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Physics Research",
+    "shortDescription": "Read / explore / production research workflow for physics.",
+    "longDescription": "Three research modes (literature-reading notes, cheap traceable exploration, a trustworthy 7-stage production pipeline) plus derivation, verification, figure, git, and review discipline. Subject-agnostic core; pair with a domain pack.",
+    "developerName": "Yamauch17",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Help me read this paper and take rigorous notes.",
+      "I need to compute this result for a paper — it must be correct."
+    ],
+    "websiteURL": "https://github.com/Yamauch17/physics-research-skills"
+  }
+}

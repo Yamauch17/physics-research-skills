@@ -1,0 +1,6 @@
+{
+  "name": "physics-research",
+  "description": "Subject-agnostic physics research workflow skills (read / explore / production modes, rigorous derivation & verification).",
+  "version": "0.1.0",
+  "contextFileName": "GEMINI.md"
+}

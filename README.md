@@ -3,7 +3,8 @@
 Auto-activating [Claude Code](https://claude.com/claude-code) skills for **physics research** — a
 subject-agnostic research-process **core** plus **pluggable domain packs**. The first domain pack is
 topological insulators; the architecture is built so any physics subject can add its own pack without
-touching the core.
+touching the core. The skills follow the open [Agent Skills](https://agentskills.io/specification)
+format, so they also work in other agents (Codex, Cursor, Copilot CLI, Gemini CLI, …).
 
 Modeled on [`obra/superpowers`](https://github.com/obra/superpowers) (process-skill format + plugin
 distribution) and [`K-Dense-AI/scientific-agent-skills`](https://github.com/K-Dense-AI/scientific-agent-skills)
@@ -13,6 +14,7 @@ distribution) and [`K-Dense-AI/scientific-agent-skills`](https://github.com/K-De
 > 把科研分成三种模式——**读**(文献→严谨笔记)、**探索**(低成本、可追溯的快速试探)、**生产**(可信、可发表的
 > 七阶段流水线);领域插件 `topological-insulator`(9 个技能)提供拓扑绝缘体的具体方法(紧束缚 H(k)、陈数、Z2、
 > 边缘态……)。核心里不出现 H(k) 这类学科专属内容——它们只属于领域插件。技能靠描述里的触发词**自动激活**。
+> 安装方法见下方 “Install & use in your agent”(支持 Claude Code / Codex / Cursor / Copilot / Gemini 等)。
 
 ## The idea: three research modes
 
@@ -42,20 +44,66 @@ The **core** speaks only of "your model / governing equations / structural invar
 different subject wouldn't share (a Bloch Hamiltonian `H(k)`, Berry curvature, edge states) lives
 **only** in a domain pack. Add a new subject = add a sibling plugin; the core is untouched.
 
-## Install
+## Install & use in your agent
 
-### Public (once the repo is on GitHub)
+Each skill is a self-contained folder with a `SKILL.md` (`name` + `description`), per the open
+[Agent Skills](https://agentskills.io/specification) spec. Skills **auto-activate** when your task
+matches a skill's `description` — you don't invoke them by hand. Pick your agent:
+
+### Claude Code
+
+Marketplace (recommended):
 ```text
 /plugin marketplace add Yamauch17/physics-research-skills
 /plugin install physics-research@physics-research-skills
-/plugin install topological-insulator@physics-research-skills
+/plugin install topological-insulator@physics-research-skills      # optional domain pack
 ```
-Install just the core for non-topological work; add domain packs as needed.
+Or as personal skills, no marketplace:
+```bash
+git clone https://github.com/Yamauch17/physics-research-skills.git
+pwsh -File physics-research-skills/install-local.ps1   # Windows: junctions every skill into ~/.claude/skills
+# macOS/Linux or manual: copy each plugins/*/skills/<name> folder into ~/.claude/skills/
+```
 
-### Local (author machine, no marketplace)
-```powershell
-pwsh -File install-local.ps1     # junctions every skill into ~/.claude/skills
-pwsh -File validate.ps1          # structural check (name==folder, description present) — expects 33
+### Codex · Cursor · Gemini CLI · Copilot CLI (native, superpowers-style)
+
+Each plugin ships the **same per-tool manifests as `superpowers`** — `.codex-plugin/plugin.json`,
+`.cursor-plugin/plugin.json`, `gemini-extension.json` (+ `GEMINI.md` / `AGENTS.md`) — all pointing at its
+`./skills/`. So each plugin installs natively: clone the repo and add the plugin **directory** the same
+way you'd add the superpowers plugin.
+
+```bash
+git clone https://github.com/Yamauch17/physics-research-skills.git
+# each plugin dir is a self-contained, multi-tool plugin:
+#   plugins/physics-research/        (core — required)
+#   plugins/topological-insulator/   (domain pack — optional)
+```
+
+| Agent | Manifest it reads | How to add |
+|-------|-------------------|-----------|
+| **Codex CLI** | `.codex-plugin/plugin.json` | add the plugin dir as a plugin (see Codex plugin docs) |
+| **Cursor** | `.cursor-plugin/plugin.json` | add the plugin dir in Cursor's plugin settings |
+| **Gemini CLI** | `gemini-extension.json` + `GEMINI.md` | install the plugin dir as an extension |
+| **GitHub Copilot CLI** | Agent Skills under `skills/` | add the repo as a plugin source; skills are auto-discovered, invoked via the `skill` tool |
+
+Point your tool at `plugins/physics-research` (and optionally `plugins/topological-insulator`) — the same
+mechanism you use for superpowers. (Consult each tool's current plugin/skills docs for the exact add step;
+the manifest layout is identical to superpowers.)
+
+**Tool-name note.** Skill instructions reference a few Claude Code tool names; every agent has
+equivalents and most map them automatically:
+
+| In the skills | Codex | Copilot CLI | Gemini CLI |
+|---------------|-------|-------------|------------|
+| `Read` / `Write` / `Edit` | native file tools | `view` / `create` / `edit` | `read_file` / `write_file` / `replace` |
+| `Bash` | native shell | `bash` | `run_shell_command` |
+| `Grep` / `Glob` | native search | `grep` / `glob` | `grep_search` / `glob` |
+
+The skills need only file + shell tools, so they port cleanly.
+
+### Verify
+```bash
+pwsh -File validate.ps1   # 33/33 SKILL.md parse; name == folder name
 ```
 
 ## Skills
@@ -93,8 +141,8 @@ massive-Dirac sign anchor).
 ## How auto-activation works
 
 Each `SKILL.md` has a `description` written as pure *triggering conditions* ("Use when …") packed with
-English + Chinese keywords. Claude reads descriptions and loads a skill when the task matches — no
-manual `/command` needed. Descriptions never summarize the workflow (that would let Claude shortcut the
+English + Chinese keywords. The agent reads descriptions and loads a skill when the task matches — no
+manual command needed. Descriptions never summarize the workflow (that would let the agent shortcut the
 skill body).
 
 ## Credits & license

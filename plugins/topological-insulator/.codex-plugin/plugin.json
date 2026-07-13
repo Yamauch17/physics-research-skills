@@ -1,0 +1,40 @@
+{
+  "name": "topological-insulator",
+  "version": "0.1.0",
+  "description": "Domain pack for topological insulators: tight-binding H(k), symmetry / Altland-Zirnbauer class, Berry curvature & Chern number, Wilson loops, Z2, edge states, k·p models, phase diagrams. Extends the physics-research core.",
+  "author": {
+    "name": "Yamauch17",
+    "url": "https://github.com/Yamauch17"
+  },
+  "homepage": "https://github.com/Yamauch17/physics-research-skills",
+  "repository": "https://github.com/Yamauch17/physics-research-skills",
+  "license": "MIT",
+  "keywords": [
+    "topological-insulator",
+    "band-theory",
+    "chern-number",
+    "z2-invariant",
+    "berry-curvature",
+    "tight-binding",
+    "condensed-matter",
+    "physics"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Topological Insulator",
+    "shortDescription": "Topological band-theory techniques (Chern, Z2, edge states).",
+    "longDescription": "Domain pack: tight-binding H(k), symmetry / Altland-Zirnbauer class, Berry curvature & Chern number, Wilson loops / Wannier charge centers, Z2 invariants, edge states & bulk-boundary correspondence, k·p effective models, topological phase diagrams. Extends the physics-research core.",
+    "developerName": "Yamauch17",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Build the BHZ model and give me its Chern number.",
+      "Check the bulk-boundary correspondence for this tight-binding model."
+    ],
+    "websiteURL": "https://github.com/Yamauch17/physics-research-skills"
+  }
+}

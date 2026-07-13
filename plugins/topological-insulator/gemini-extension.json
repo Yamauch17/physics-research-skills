@@ -1,0 +1,6 @@
+{
+  "name": "topological-insulator",
+  "description": "Topological-insulator domain-pack skills (tight-binding, Berry curvature, Chern, Z2, Wilson loops, edge states, k·p). Extends the physics-research core.",
+  "version": "0.1.0",
+  "contextFileName": "GEMINI.md"
+}
