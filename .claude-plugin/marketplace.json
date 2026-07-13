@@ -11,7 +11,7 @@
       "name": "physics-research",
       "description": "Subject-agnostic physics research workflow: three research modes (literature-reading notes, cheap traceable exploration, trustworthy production pipeline) plus derivation, verification, figure, git, and review discipline. The domain-independent core.",
       "author": { "name": "Yamauch17" },
-      "category": "research",
+      "category": "productivity",
       "source": "./plugins/physics-research",
       "homepage": "https://github.com/Yamauch17/physics-research-skills"
     },
@@ -19,7 +19,7 @@
       "name": "topological-insulator",
       "description": "Domain pack for topological insulators: tight-binding H(k), symmetry / Altland-Zirnbauer class, Berry curvature & Chern number, Wilson loops / Wannier charge centers, Z2 invariants, edge states & bulk-boundary correspondence, k.p effective models, topological phase diagrams. Extends the physics-research core.",
       "author": { "name": "Yamauch17" },
-      "category": "research",
+      "category": "productivity",
       "source": "./plugins/topological-insulator",
       "homepage": "https://github.com/Yamauch17/physics-research-skills"
     }
