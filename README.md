@@ -52,12 +52,19 @@ matches a skill's `description` — you don't invoke them by hand. Pick your age
 
 ### Claude Code
 
-Marketplace (recommended):
+Marketplace (recommended) — run each line as a **separate** `/plugin` command (don't paste them all at once):
 ```text
 /plugin marketplace add Yamauch17/physics-research-skills
-/plugin install physics-research@physics-research-skills
-/plugin install topological-insulator@physics-research-skills      # optional domain pack
 ```
+```text
+/plugin install physics-research@physics-research-skills
+```
+```text
+/plugin install topological-insulator@physics-research-skills
+```
+The third command (the `topological-insulator` domain pack) is optional. If `marketplace add` rejects the
+`owner/repo` form, use the full clone URL instead:
+`/plugin marketplace add https://github.com/Yamauch17/physics-research-skills.git`
 Or as personal skills, no marketplace:
 ```bash
 git clone https://github.com/Yamauch17/physics-research-skills.git
