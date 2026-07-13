@@ -37,12 +37,16 @@ The core stays universal to all of physics — no subject-specific objects leak 
 
 ## Install
 
+Run each as a separate `/plugin` command:
 ```text
 /plugin marketplace add Yamauch17/physics-research-skills
+```
+```text
 /plugin install physics-research@physics-research-skills
 ```
 
-Skills auto-activate from their `description` triggers — no manual command needed.
+Skills auto-activate from their `description` triggers — no manual command needed. For Codex, Cursor,
+Gemini CLI, or Copilot CLI, see the [main README](../../README.md#install--use-in-your-agent).
 
 ## Example session
 

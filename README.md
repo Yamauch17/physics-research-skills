@@ -65,12 +65,13 @@ Marketplace (recommended) — run each line as a **separate** `/plugin` command 
 The third command (the `topological-insulator` domain pack) is optional. If `marketplace add` rejects the
 `owner/repo` form, use the full clone URL instead:
 `/plugin marketplace add https://github.com/Yamauch17/physics-research-skills.git`
-Or as personal skills, no marketplace:
+Or as personal skills, without a marketplace — clone, then install into `~/.claude/skills/`:
 ```bash
 git clone https://github.com/Yamauch17/physics-research-skills.git
-pwsh -File physics-research-skills/install-local.ps1   # Windows: junctions every skill into ~/.claude/skills
-# macOS/Linux or manual: copy each plugins/*/skills/<name> folder into ~/.claude/skills/
+pwsh -File physics-research-skills/install-local.ps1
 ```
+On Windows, `install-local.ps1` junctions every skill into `~/.claude/skills`. On macOS/Linux, or to do it
+by hand, copy each `plugins/*/skills/<name>` folder into `~/.claude/skills/` instead.
 
 ### Codex · Cursor · Gemini CLI · Copilot CLI (native, superpowers-style)
 
@@ -81,10 +82,9 @@ way you'd add the superpowers plugin.
 
 ```bash
 git clone https://github.com/Yamauch17/physics-research-skills.git
-# each plugin dir is a self-contained, multi-tool plugin:
-#   plugins/physics-research/        (core — required)
-#   plugins/topological-insulator/   (domain pack — optional)
 ```
+Each plugin directory is a self-contained, multi-tool plugin: `plugins/physics-research/` (core, required)
+and `plugins/topological-insulator/` (domain pack, optional).
 
 | Agent | Manifest it reads | How to add |
 |-------|-------------------|-----------|
@@ -110,8 +110,9 @@ The skills need only file + shell tools, so they port cleanly.
 
 ### Verify
 ```bash
-pwsh -File validate.ps1   # 33/33 SKILL.md parse; name == folder name
+pwsh -File validate.ps1
 ```
+This checks that all 33 `SKILL.md` files parse and each skill's `name` matches its folder.
 
 ## Skills
 

@@ -22,9 +22,14 @@ Part of the [physics-research-skills](https://github.com/Yamauch17/physics-resea
 
 ## Install
 
+Run each as a separate `/plugin` command — install the core first, then this pack:
 ```text
 /plugin marketplace add Yamauch17/physics-research-skills
-/plugin install physics-research@physics-research-skills      # the core (required)
+```
+```text
+/plugin install physics-research@physics-research-skills
+```
+```text
 /plugin install topological-insulator@physics-research-skills
 ```
 
@@ -39,8 +44,8 @@ Ships a runnable self-test:
 
 ```bash
 python skills/berry-curvature-chern/scripts/chern_fhs.py
-# C(m=+1)=+1  C(m=-1)=-1  C(m=+3)=0  C(m=-3)=0  ->  ALL PASSED
 ```
+Expected output: `C(m=+1)=+1  C(m=-1)=-1  C(m=+3)=0  C(m=-3)=0` → `ALL PASSED`.
 
 ## Security profile
 
