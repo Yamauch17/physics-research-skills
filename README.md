@@ -6,10 +6,6 @@ topological insulators; the architecture is built so any physics subject can add
 touching the core. The skills follow the open [Agent Skills](https://agentskills.io/specification)
 format, so they also work in other agents (Codex, Cursor, Copilot CLI, Gemini CLI, …).
 
-Modeled on [`obra/superpowers`](https://github.com/obra/superpowers) (process-skill format + plugin
-distribution) and [`K-Dense-AI/scientific-agent-skills`](https://github.com/K-Dense-AI/scientific-agent-skills)
-(large SKILL.md library).
-
 > **中文速览:** 面向物理科研的 Claude Code 技能集。核心插件 `physics-research`(24 个技能,**对所有物理学科通用**)
 > 把科研分成三种模式——**读**(文献→严谨笔记)、**探索**(低成本、可追溯的快速试探)、**生产**(可信、可发表的
 > 七阶段流水线);领域插件 `topological-insulator`(9 个技能)提供拓扑绝缘体的具体方法(紧束缚 H(k)、陈数、Z2、
@@ -73,12 +69,12 @@ pwsh -File physics-research-skills/install-local.ps1
 On Windows, `install-local.ps1` junctions every skill into `~/.claude/skills`. On macOS/Linux, or to do it
 by hand, copy each `plugins/*/skills/<name>` folder into `~/.claude/skills/` instead.
 
-### Codex · Cursor · Gemini CLI · Copilot CLI (native, superpowers-style)
+### Codex · Cursor · Gemini CLI · Copilot CLI (native)
 
-Each plugin ships the **same per-tool manifests as `superpowers`** — `.codex-plugin/plugin.json`,
+Each plugin ships **standard per-tool manifests** — `.codex-plugin/plugin.json`,
 `.cursor-plugin/plugin.json`, `gemini-extension.json` (+ `GEMINI.md` / `AGENTS.md`) — all pointing at its
-`./skills/`. So each plugin installs natively: clone the repo and add the plugin **directory** the same
-way you'd add the superpowers plugin.
+`./skills/`. So each plugin installs natively: clone the repo and add the plugin **directory** as a
+plugin or extension in your tool.
 
 ```bash
 git clone https://github.com/Yamauch17/physics-research-skills.git
@@ -93,9 +89,8 @@ and `plugins/topological-insulator/` (domain pack, optional).
 | **Gemini CLI** | `gemini-extension.json` + `GEMINI.md` | install the plugin dir as an extension |
 | **GitHub Copilot CLI** | Agent Skills under `skills/` | add the repo as a plugin source; skills are auto-discovered, invoked via the `skill` tool |
 
-Point your tool at `plugins/physics-research` (and optionally `plugins/topological-insulator`) — the same
-mechanism you use for superpowers. (Consult each tool's current plugin/skills docs for the exact add step;
-the manifest layout is identical to superpowers.)
+Point your tool at `plugins/physics-research` (and optionally `plugins/topological-insulator`), then
+consult that tool's current plugin/skills docs for the exact add step.
 
 **Tool-name note.** Skill instructions reference a few Claude Code tool names; every agent has
 equivalents and most map them automatically:
