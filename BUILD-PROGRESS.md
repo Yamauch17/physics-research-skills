@@ -89,10 +89,10 @@ Plan: `C:\Users\96136\.claude\plans\kind-booping-perlis.md`. Repo root: `C:\User
 - [x] run `install-local.ps1` → 33 junctions in ~/.claude/skills
 - [x] run self-test scripts: spot_check.py, chern_fhs.py, figstyle.py → ALL PASSED
 - [x] finalize `README.md`
-- [ ] `git init` + initial commit (leave push to user)
+- [x] `git init` + commit + push → https://github.com/Yamauch17/physics-research-skills (PUBLIC, main)
 
-## Phase 8 — Quality: subagent pressure-tests (now unlocked)
-- [ ] Pressure-test discipline skills (exploration-mode, production-mode, convention-driven-coding, physical-verification, checkpoint-and-resume, adversarial-review); close loopholes.
+## Phase 8 — Quality: subagent pressure-tests (OPTIONAL follow-up, offered to user)
+- [ ] Pressure-test discipline skills (exploration-mode, production-mode, convention-driven-coding, physical-verification, checkpoint-and-resume, adversarial-review); close loopholes. Not required for release; refines robustness.
 
-## Phase 9 — Memory
-- [ ] Save preferences: save-immediately; no avoid-subagents/token-economy; project context.
+## Phase 9 — Memory  ✅ DONE
+- [x] Saved 5 memories: user-physics-researcher, save-immediately-checkpoint, no-subagent-token-rules, physics-skills-must-be-universal, physics-research-skills-project.
