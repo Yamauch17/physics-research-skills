@@ -1,0 +1,22 @@
+{
+  "name": "topological-insulator",
+  "description": "Domain pack for topological insulators and topological band structures: tight-binding H(k), symmetry / Altland-Zirnbauer class, Berry curvature, Chern number, Z2, Wilson loops, edge states, k.p effective models, phase diagrams. Extends the physics-research core.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Yamauch17",
+    "email": "austinguo17@gmail.com"
+  },
+  "homepage": "https://github.com/Yamauch17/physics-research-skills",
+  "repository": "https://github.com/Yamauch17/physics-research-skills",
+  "license": "MIT",
+  "keywords": [
+    "topological-insulator",
+    "band-theory",
+    "chern-number",
+    "z2-invariant",
+    "berry-curvature",
+    "tight-binding",
+    "condensed-matter",
+    "physics"
+  ]
+}

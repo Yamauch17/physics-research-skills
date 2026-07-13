@@ -1,0 +1,27 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "physics-research-skills",
+  "description": "Auto-activating skills for computational and theoretical physics research: a subject-agnostic research-process core (read / explore / production modes, rigorous derivation & verification, adversarial review) plus pluggable domain packs. First domain pack: topological insulators.",
+  "owner": {
+    "name": "Yamauch17",
+    "email": "austinguo17@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "physics-research",
+      "description": "Subject-agnostic physics research workflow: three research modes (literature-reading notes, cheap traceable exploration, trustworthy production pipeline) plus derivation, verification, figure, git, and review discipline. The domain-independent core.",
+      "author": { "name": "Yamauch17" },
+      "category": "research",
+      "source": "./plugins/physics-research",
+      "homepage": "https://github.com/Yamauch17/physics-research-skills"
+    },
+    {
+      "name": "topological-insulator",
+      "description": "Domain pack for topological insulators: tight-binding H(k), symmetry / Altland-Zirnbauer class, Berry curvature & Chern number, Wilson loops / Wannier charge centers, Z2 invariants, edge states & bulk-boundary correspondence, k.p effective models, topological phase diagrams. Extends the physics-research core.",
+      "author": { "name": "Yamauch17" },
+      "category": "research",
+      "source": "./plugins/topological-insulator",
+      "homepage": "https://github.com/Yamauch17/physics-research-skills"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "physics-research",
+  "description": "Subject-agnostic physics research workflow: read / explore / production modes, rigorous derivation and verification, PRL figures, phased git, adversarial review.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Yamauch17",
+    "email": "austinguo17@gmail.com"
+  },
+  "homepage": "https://github.com/Yamauch17/physics-research-skills",
+  "repository": "https://github.com/Yamauch17/physics-research-skills",
+  "license": "MIT",
+  "keywords": [
+    "physics",
+    "research",
+    "workflow",
+    "skills",
+    "derivation",
+    "verification",
+    "reproducibility"
+  ]
+}
