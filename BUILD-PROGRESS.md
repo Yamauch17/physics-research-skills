@@ -96,3 +96,10 @@ Plan: `C:\Users\96136\.claude\plans\kind-booping-perlis.md`. Repo root: `C:\User
 
 ## Phase 9 — Memory  ✅ DONE
 - [x] Saved 5 memories: user-physics-researcher, save-immediately-checkpoint, no-subagent-token-rules, physics-skills-must-be-universal, physics-research-skills-project.
+
+## Phase 10 — Review split (2026-07-14)  ✅ DONE
+- [x] review-workflow (NEW skill): independent review workflow — Level 1 self-review (research-review) → Level 2 adversarial audit (adversarial-review); never a production stage.
+- [x] production-mode: pipeline now 6 stages (0–5), ends at physical-verification; hands off to review-workflow.
+- [x] research-mode-router: Review added as a 4th, independent mode.
+- [x] Trigger descriptions strengthened (more EN + 中文 keywords): review-workflow, research-review, adversarial-review, production-mode, research-mode-router.
+- [x] Counts 33 → 34 (core 24 → 25): validate.ps1, install-local.ps1, both READMEs, AGENTS.md, GEMINI.md, codex plugin.json.

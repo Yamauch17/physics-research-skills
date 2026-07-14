@@ -6,9 +6,9 @@ topological insulators; the architecture is built so any physics subject can add
 touching the core. The skills follow the open [Agent Skills](https://agentskills.io/specification)
 format, so they also work in other agents (Codex, Cursor, Copilot CLI, Gemini CLI, …).
 
-> **中文速览:** 面向物理科研的 Claude Code 技能集。核心插件 `physics-research`(24 个技能,**对所有物理学科通用**)
+> **中文速览:** 面向物理科研的 Claude Code 技能集。核心插件 `physics-research`(25 个技能,**对所有物理学科通用**)
 > 把科研分成三种模式——**读**(文献→严谨笔记)、**探索**(低成本、可追溯的快速试探)、**生产**(可信、可发表的
-> 七阶段流水线);领域插件 `topological-insulator`(9 个技能)提供拓扑绝缘体的具体方法(紧束缚 H(k)、陈数、Z2、
+> 六阶段流水线)——外加独立于生产的**评审**工作流(自查 → 对抗性审稿);领域插件 `topological-insulator`(9 个技能)提供拓扑绝缘体的具体方法(紧束缚 H(k)、陈数、Z2、
 > 边缘态……)。核心里不出现 H(k) 这类学科专属内容——它们只属于领域插件。技能靠描述里的触发词**自动激活**。
 > 安装方法见下方 “Install & use in your agent”(支持 Claude Code / Codex / Cursor / Copilot / Gemini 等)。
 
@@ -22,16 +22,19 @@ The `research-mode-router` skill routes you:
 | **Read** | understand a paper / book / slides / code | thorough notes, full derivations |
 | **Explore** | probe a question whose answer you can't yet picture | one-line `FINDINGS.md` + a saved plot |
 | **Produce** | a result that must be trusted / published / reused | acceptance-gated deliverable |
+| **Review** | judge a finished result / repo / manuscript | sign-off or referee report |
 
 A hard **firewall** separates them: exploration code tells you *where to look*, never *what the answer
-is*. Trusted results are re-derived from scratch through a 7-stage production pipeline.
+is*. Trusted results are re-derived from scratch through a 6-stage production pipeline. **Review** is
+an independent workflow, not a production stage — it runs fresh on the finished result, at two levels
+(self-review, then a hostile adversarial audit).
 
 ## Architecture: core + domain packs
 
 ```
 physics-research-skills/            (this repo = a Claude Code plugin marketplace)
 ├── plugins/
-│   ├── physics-research/           Tier 1 — subject-agnostic core (24 skills)
+│   ├── physics-research/           Tier 1 — subject-agnostic core (25 skills)
 │   └── topological-insulator/      Tier 2 — domain pack (9 skills)
 └── .claude-plugin/marketplace.json
 ```
@@ -107,19 +110,19 @@ The skills need only file + shell tools, so they port cleanly.
 ```bash
 pwsh -File validate.ps1
 ```
-This checks that all 33 `SKILL.md` files parse and each skill's `name` matches its folder.
+This checks that all 34 `SKILL.md` files parse and each skill's `name` matches its folder.
 
 ## Skills
 
-### `physics-research` — core (24), universal to all physics
+### `physics-research` — core (25), universal to all physics
 **Router + the 3 modes:** `research-mode-router` · `literature-reading-notes` · `exploration-mode` ·
 `production-mode`
-**Production pipeline (7 stages):** `literature-review-conventions` · `physics-brainstorming` ·
-`theory-derivation` · `implementation-planning` · `convention-driven-coding` · `physical-verification` ·
-`research-review`
+**Production pipeline (6 stages):** `literature-review-conventions` · `physics-brainstorming` ·
+`theory-derivation` · `implementation-planning` · `convention-driven-coding` · `physical-verification`
+**Review workflow (independent):** `review-workflow` · `research-review` · `adversarial-review`
 **Rigor & infrastructure:** `convention-table` · `dimensional-analysis` · `numerical-spot-check` ·
 `external-anchor-doctrine` · `convergence-study` · `prl-figure-style` · `jupytext-notebook-workflow` ·
-`findings-logger` · `phased-git-workflow` · `obsidian-safe-markdown` · `adversarial-review` ·
+`findings-logger` · `phased-git-workflow` · `obsidian-safe-markdown` ·
 `research-repo-bootstrap` · `checkpoint-and-resume`
 
 ### `topological-insulator` — domain pack (9)

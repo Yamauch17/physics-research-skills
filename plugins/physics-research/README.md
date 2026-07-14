@@ -8,29 +8,34 @@ Part of the [physics-research-skills](https://github.com/Yamauch17/physics-resea
 
 ## What it does
 
-Every research task runs in one of **three modes**, and a router picks the right one:
+Every research task runs in one of **three modes**, and a router picks the right one; a fourth,
+**independent review workflow** judges finished work:
 
 | Mode | When | Output |
 |------|------|--------|
 | **Read** | understand a paper / book / slides / code | thorough notes, full derivations |
 | **Explore** | probe a question you can't yet picture | one-line `FINDINGS.md` + a saved plot |
 | **Produce** | a result that must be trusted / published | acceptance-gated deliverable |
+| **Review** | judge a finished result / repo / manuscript | sign-off or referee report |
 
-**Produce** is a 7-stage pipeline — literature & conventions → brainstorm → **derivation** (with a
+**Produce** is a 6-stage pipeline — literature & conventions → brainstorm → **derivation** (with a
 conventions table + per-step numerical spot-checks) → plan → convention-driven code → **5-check
-physical verification** (units · symmetries · known-limit reduction · convergence · self-consistency)
-→ review. A hard firewall keeps quick-and-dirty exploration code out of trusted results.
+physical verification** (units · symmetries · known-limit reduction · convergence · self-consistency).
+A hard firewall keeps quick-and-dirty exploration code out of trusted results.
 
-## Skills (24)
+**Review** is deliberately *not* a production stage: it runs fresh on the finished result — yours or
+anyone's — at two levels (self-review sign-off, then a hostile adversarial audit).
+
+## Skills (25)
 
 - **Router + modes:** `research-mode-router`, `literature-reading-notes`, `exploration-mode`,
   `production-mode`
 - **Production pipeline:** `literature-review-conventions`, `physics-brainstorming`,
-  `theory-derivation`, `implementation-planning`, `convention-driven-coding`, `physical-verification`,
-  `research-review`
+  `theory-derivation`, `implementation-planning`, `convention-driven-coding`, `physical-verification`
+- **Review workflow (independent):** `review-workflow`, `research-review`, `adversarial-review`
 - **Rigor & infrastructure:** `convention-table`, `dimensional-analysis`, `numerical-spot-check`,
   `external-anchor-doctrine`, `convergence-study`, `prl-figure-style`, `jupytext-notebook-workflow`,
-  `findings-logger`, `phased-git-workflow`, `obsidian-safe-markdown`, `adversarial-review`,
+  `findings-logger`, `phased-git-workflow`, `obsidian-safe-markdown`,
   `research-repo-bootstrap`, `checkpoint-and-resume`
 
 The core stays universal to all of physics — no subject-specific objects leak in; those live in domain packs.
@@ -57,7 +62,10 @@ Gemini CLI, or Copilot CLI, see the [main README](../../README.md#install--use-i
 > → `exploration-mode`: dirty script in `scratch/`, plot saved with params in the filename, one line to `FINDINGS.md`.
 >
 > **You:** now I need this number for the paper — it has to be right
-> → `production-mode`: runs the 7 stages; `physical-verification` blocks the result until all five checks pass.
+> → `production-mode`: runs the 6 stages; `physical-verification` blocks the result until all five checks pass.
+>
+> **You:** 结果出来了,投稿前帮我审一遍
+> → `review-workflow`: self-review sign-off, then `adversarial-review` as a hostile referee.
 
 ## Security profile
 

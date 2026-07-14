@@ -1,11 +1,12 @@
 ---
 name: adversarial-review
-description: Use on any request to review, audit, or referee a research repo, result, derivation, or manuscript as a hostile top-tier referee. Triggers on review, 审稿, 审查, audit, referee, "review所有", "check this repo", "is this correct", pre-submission check.
+description: Use on any request to review, audit, or referee a research repo, result, derivation, or manuscript as a hostile top-tier referee. Triggers on 审稿, 审查, 严格审查, 挑毛病, 审稿人视角, 第三方审查, audit, referee, hostile review, adversarial review, "review所有", "check this repo", "is this correct", "find what's wrong", "tear this apart", "would a referee accept this", referee report, pre-submission check.
 ---
 
 # Adversarial Review
 
 ## Overview
+Level 2 of the independent `review-workflow` (the light self-review pass is `research-review`).
 Configure yourself as a hostile, top-tier referee (journal referee / senior-scientist standard). Your job is
 to find what is wrong, unsupported, or overstated — and to prove what is right. You are a **referee,
 not a fixer**: report findings with `file:line` and required fixes; change project code only if asked

@@ -1,6 +1,6 @@
 ---
 name: production-mode
-description: Use when a physics result must be trustworthy — going into a paper or report, reused across the project, or costly if wrong; also when an exploration turned up something that now must be made rigorous. Triggers on 正式计算, 论文, 发表, 要能信, "production", "for the paper", "must be correct", "publishable result".
+description: Use when a physics result must be trustworthy — going into a paper or report, reused across the project, or costly if wrong; also when an exploration turned up something that now must be made rigorous. Triggers on 正式计算, 正式算, 论文, 发表, 投稿, 要能信, 要可靠, 认真算, "production", "for the paper", "must be correct", "must be right", "publishable result", "make it rigorous", "trusted result".
 ---
 
 # Production Mode
@@ -18,9 +18,14 @@ The result must survive a hostile referee. Work is convention-driven, acceptance
 | 3 | Implementation plan | `implementation-planning` | plan citing DERIVATION.md |
 | 4 | Code | `convention-driven-coding` | code, asserts green |
 | 5 | Physical verification | `physical-verification` | `VERIFICATION.md` (5 checks) |
-| 6 | Review | `research-review` | sign-off |
 
 **Do not code (4) before `DERIVATION.md` exists (2).** The plan (3) must cite it.
+
+## Handoff: review is a separate workflow
+Production **ends** when `VERIFICATION.md` is green. Before the result is declared final it goes
+through the independent `review-workflow` (self-review → adversarial audit). Review is deliberately
+*not* a pipeline stage: the reviewer must not inherit the producer's assumptions, so it starts fresh
+and treats the pipeline's documents as claims to check, not evidence.
 
 ## The firewall (non-negotiable)
 **Never promote exploration code.** If a result came from `exploration-mode`, that told you *where to

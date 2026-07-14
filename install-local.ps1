@@ -31,4 +31,4 @@ foreach ($s in $skillDirs) {
 }
 Write-Host ""
 Write-Host ("installed {0} skills -> {1}" -f $n, $dest)
-if ($n -ne 33) { Write-Host ("[WARN] expected 33 skills, installed {0}" -f $n) }
+if ($n -ne 34) { Write-Host ("[WARN] expected 34 skills, installed {0}" -f $n) }

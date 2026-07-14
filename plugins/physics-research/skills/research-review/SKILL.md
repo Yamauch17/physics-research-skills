@@ -1,14 +1,15 @@
 ---
 name: research-review
-description: Use when reviewing your own production result before declaring it final — checking code quality and whether the physics conclusions are actually supported by the data. Triggers on 自查, self-review, sign-off, "is my result solid", "before I call this done", finalizing a result.
+description: Use when reviewing your own result before declaring it final — checking code quality and whether the physics conclusions are actually supported by the data. Triggers on 自查, 自我检查, 自审, 收尾检查, 定稿前, self-review, sign-off, "is my result solid", "does the data support this", "am I overclaiming", "before I call this done", "double-check my result", final check, finalizing a result.
 ---
 
-# Research Review (Stage 6)
+# Research Review (Self-Review)
 
 ## Overview
-The self-review gate before a result is called final. Two levels. This is *your own* critical pass; a
-hostile external audit is a separate, heavier step — see `adversarial-review`. Run this only after
-`physical-verification` (Stage 5) is green.
+Level 1 of the independent `review-workflow`: the self-review gate before a result is called final.
+This is *your own* critical pass; the hostile external audit is Level 2 — see `adversarial-review`.
+Review is separate from production: for a result out of the production pipeline, run this only after
+`physical-verification` is green, and treat the pipeline's documents as claims to re-check.
 
 ## Code level
 - **Readability & reuse:** would another person (or you in six months) follow it? Duplicated logic

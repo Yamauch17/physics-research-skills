@@ -22,8 +22,8 @@ foreach ($md in $skillFiles) {
 }
 
 Write-Host ""
-Write-Host "total skills found: $count (expected 33)"
-if ($count -ne 33) { Write-Host "[WARN] skill count != 33" }
+Write-Host "total skills found: $count (expected 34)"
+if ($count -ne 34) { Write-Host "[WARN] skill count != 34" }
 if ($fail -gt 0) { Write-Host "VALIDATION FAILED: $fail problem(s)"; exit 1 }
 Write-Host "ALL PASSED"
 exit 0
