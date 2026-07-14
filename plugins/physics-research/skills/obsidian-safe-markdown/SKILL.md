@@ -1,6 +1,6 @@
 ---
 name: obsidian-safe-markdown
-description: Use when writing or editing Markdown notes and theory documents that render in Obsidian with LaTeX math. Triggers on obsidian, 笔记格式, markdown math, MathJax, "$$", table with math, "renders wrong", "math broke in Obsidian".
+description: Use when writing or editing Markdown notes and theory documents that render in Obsidian with LaTeX math. Triggers on obsidian, 笔记格式, 公式渲染, 公式显示不对, 双美元符, markdown math, LaTeX in markdown, MathJax, "$$", table with math, "renders wrong", "math broke in Obsidian", "equations don't display", writing a theory note.
 ---
 
 # Obsidian-Safe Markdown

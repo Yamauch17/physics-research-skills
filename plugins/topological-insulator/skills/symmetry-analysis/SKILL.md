@@ -1,6 +1,6 @@
 ---
 name: symmetry-analysis
-description: Use when classifying or numerically verifying the symmetries of a Bloch Hamiltonian — time-reversal, particle-hole, chiral/sublattice — and its Altland-Zirnbauer class. Triggers on symmetry, 对称性, TRS, PHS, chiral, sublattice, time-reversal, particle-hole, Altland-Zirnbauer, AZ class, tenfold way.
+description: Use when classifying or numerically verifying the symmetries of a Bloch Hamiltonian — time-reversal, particle-hole, chiral/sublattice — and its Altland-Zirnbauer class. Triggers on symmetry, 对称性, 时间反演, 粒子空穴, 手征对称, 子晶格对称, 十重分类, 对称性分类, TRS, PHS, chiral, sublattice, time-reversal, particle-hole, Kramers, antiunitary, "what symmetry class", "check TRS", Altland-Zirnbauer, AZ class, tenfold way.
 ---
 
 # Symmetry Analysis

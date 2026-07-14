@@ -1,6 +1,6 @@
 ---
 name: tight-binding-builder
-description: Use when constructing a tight-binding Bloch Hamiltonian H(k) for a lattice model such as SSH, Haldane, Kitaev, or BHZ. Triggers on tight-binding, 紧束缚, Bloch Hamiltonian, H(k), hopping, SSH, Haldane, Kitaev, BHZ, Pauli decomposition, lattice model.
+description: Use when constructing a tight-binding Bloch Hamiltonian H(k) for a lattice model such as SSH, Haldane, Kitaev, or BHZ. Triggers on tight-binding, 紧束缚, 紧束缚模型, 布洛赫哈密顿量, 跳跃项, 晶格模型, Bloch Hamiltonian, H(k), "build the lattice model", "construct H(k)", hopping, SSH, Haldane, Kitaev, BHZ, Qi-Wu-Zhang, QWZ, graphene, honeycomb, Pauli decomposition, lattice model, band structure.
 ---
 
 # Tight-Binding Builder

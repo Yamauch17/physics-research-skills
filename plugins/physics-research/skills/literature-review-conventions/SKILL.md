@@ -1,6 +1,6 @@
 ---
 name: literature-review-conventions
-description: Use at the start of a production calculation to find the standard conventions and published benchmark values you should align with, before deriving or coding. Triggers on 文献调研, 基准值, standard convention, benchmark, "what do papers use", "is there a reference value", "prior art".
+description: Use at the start of a production calculation to find the standard conventions and published benchmark values you should align with, before deriving or coding. Triggers on 文献调研, 基准值, 对标, 找基准, 惯例调研, 文献里怎么定义, standard convention, benchmark, literature survey, "what do papers use", "which convention does the literature use", "is there a reference value", "published benchmark", "prior art".
 ---
 
 # Literature Review & Conventions (Stage 0)

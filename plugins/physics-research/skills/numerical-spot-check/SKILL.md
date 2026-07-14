@@ -1,6 +1,6 @@
 ---
 name: numerical-spot-check
-description: Use when a nontrivial algebraic, symbolic, or index-manipulation step needs verification — plug in random momenta, random parameters, and random unitaries and check the equation holds numerically before trusting it. Triggers on 数值验证, 抽查, "is this identity right", "verify this step", "check the algebra", random test, allclose.
+description: Use when a nontrivial algebraic, symbolic, or index-manipulation step needs verification — plug in random momenta, random parameters, and random unitaries and check the equation holds numerically before trusting it. Triggers on 数值验证, 抽查, 随机抽查, 代入数值, 验证这一步, "is this identity right", "verify this step", "check the algebra", "plug in numbers", "numerically check", "test this equation", random test, sympy check, allclose.
 ---
 
 # Numerical Spot-Check

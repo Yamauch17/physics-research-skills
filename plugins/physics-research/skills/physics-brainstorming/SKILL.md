@@ -1,6 +1,6 @@
 ---
 name: physics-brainstorming
-description: Use when starting a production calculation and the real physical question, the observable, or the success criterion is not yet pinned down. Triggers on 头脑风暴, 可观测量, "what am I actually calculating", "what would falsify", "what's the observable", vague research goal.
+description: Use when starting a production calculation and the real physical question, the observable, or the success criterion is not yet pinned down. Triggers on 头脑风暴, 可观测量, 目标不清楚, 到底算什么, 明确问题, 可证伪, "what am I actually calculating", "define the question", "what's the deliverable", "what would falsify", "what's the observable", "success criterion", vague research goal.
 ---
 
 # Physics Brainstorming (Stage 1)

@@ -8,8 +8,7 @@ Part of the [physics-research-skills](https://github.com/Yamauch17/physics-resea
 
 ## What it does
 
-Every research task runs in one of **three modes**, and a router picks the right one; a fourth,
-**independent review workflow** judges finished work:
+Every research task runs in one of **four modes**, and a router picks the right one:
 
 | Mode | When | Output |
 |------|------|--------|
@@ -23,8 +22,8 @@ conventions table + per-step numerical spot-checks) → plan → convention-driv
 physical verification** (units · symmetries · known-limit reduction · convergence · self-consistency).
 A hard firewall keeps quick-and-dirty exploration code out of trusted results.
 
-**Review** is deliberately *not* a production stage: it runs fresh on the finished result — yours or
-anyone's — at two levels (self-review sign-off, then a hostile adversarial audit).
+**Review** runs on a finished result — yours or anyone's — at two levels (self-review sign-off, then
+a hostile adversarial audit).
 
 ## Skills (25)
 
@@ -32,7 +31,7 @@ anyone's — at two levels (self-review sign-off, then a hostile adversarial aud
   `production-mode`
 - **Production pipeline:** `literature-review-conventions`, `physics-brainstorming`,
   `theory-derivation`, `implementation-planning`, `convention-driven-coding`, `physical-verification`
-- **Review workflow (independent):** `review-workflow`, `research-review`, `adversarial-review`
+- **Review:** `review-workflow`, `research-review`, `adversarial-review`
 - **Rigor & infrastructure:** `convention-table`, `dimensional-analysis`, `numerical-spot-check`,
   `external-anchor-doctrine`, `convergence-study`, `prl-figure-style`, `jupytext-notebook-workflow`,
   `findings-logger`, `phased-git-workflow`, `obsidian-safe-markdown`,

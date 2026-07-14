@@ -1,6 +1,6 @@
 ---
 name: implementation-planning
-description: Use when writing the implementation plan for a production calculation, after DERIVATION.md exists and before writing code. Triggers on 实现计划, plan the code, "how should I implement", "before I code", writing-plan for a calculation.
+description: Use when writing the implementation plan for a production calculation, after DERIVATION.md exists and before writing code. Triggers on 实现计划, 代码规划, 怎么实现, 先规划再写, implementation plan, plan the code, "how should I implement", "structure the code", "plan before coding", "before I code", writing-plan for a calculation.
 ---
 
 # Implementation Planning (Stage 3)

@@ -1,6 +1,6 @@
 ---
 name: numerical-tb-backend
-description: Use when choosing or using a numerical backend for tight-binding and topology calculations — building H(k), diagonalizing, Berry/Chern/Wilson, ribbons, or transport. Triggers on pythtb, kwant, Z2Pack, WannierTools, numpy tight-binding, 数值后端, "which library", band structure code, transport code.
+description: Use when choosing or using a numerical backend for tight-binding and topology calculations — building H(k), diagonalizing, Berry/Chern/Wilson, ribbons, or transport. Triggers on pythtb, kwant, Z2Pack, WannierTools, numpy tight-binding, 数值后端, 用什么库, 选什么软件, 数值计算库, "which library", "which package", "PythTB or Kwant", band structure code, transport code, tight-binding code, conductance calculation.
 ---
 
 # Numerical TB Backend

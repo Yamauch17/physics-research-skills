@@ -1,6 +1,6 @@
 ---
 name: theory-derivation
-description: Use when deriving the governing model or equations of a problem by hand or symbolically — a Hamiltonian, Lagrangian, effective theory, master/rate equation, or reduced model — before any code is written. Triggers on 推导, derive, governing equations, effective theory, "work out the model", "derive the equations", reduction, low-energy model.
+description: Use when deriving the governing model or equations of a problem by hand or symbolically — a Hamiltonian, Lagrangian, effective theory, master/rate equation, or reduced model — before any code is written. Triggers on 推导, 建模, 从头推, 写下哈密顿量, 拉氏量, 有效理论, derive, governing equations, effective theory, "set up the model", "write down the Hamiltonian", "work out the model", "derive the equations", "derive from first principles", master equation, reduction, low-energy model.
 ---
 
 # Theory Derivation (Stage 2)

@@ -1,6 +1,6 @@
 ---
 name: findings-logger
-description: Use when recording the result of a quick exploration so it stays traceable — the one mandatory output of exploration mode. Triggers on FINDINGS, 记录发现, log this, "note the result", "write it down", one-line log, exploration result.
+description: Use when recording the result of a quick exploration so it stays traceable — the one mandatory output of exploration mode. Triggers on FINDINGS, 记录发现, 记一下, 记下来, 存个结论, log this, "log the finding", "note the result", "record what we found", "write it down", "jot down", one-line log, exploration result.
 ---
 
 # Findings Logger

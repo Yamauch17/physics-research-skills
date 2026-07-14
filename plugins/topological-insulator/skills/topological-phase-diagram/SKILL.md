@@ -1,6 +1,6 @@
 ---
 name: topological-phase-diagram
-description: Use when mapping a topological phase diagram — scanning model parameters to locate phase boundaries and gap-closing transitions where an invariant changes. Triggers on phase diagram, 相图, 相变, phase boundary, gap closing, topological transition, parameter scan, critical point.
+description: Use when mapping a topological phase diagram — scanning model parameters to locate phase boundaries and gap-closing transitions where an invariant changes. Triggers on phase diagram, 相图, 拓扑相图, 相变, 相边界, 能隙关闭, 扫参数找相变, phase boundary, gap closing, "where does the gap close", "map the phase diagram", topological transition, phase transition line, parameter scan, critical point, "as a function of the mass".
 ---
 
 # Topological Phase Diagram

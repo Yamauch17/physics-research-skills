@@ -21,11 +21,9 @@ The result must survive a hostile referee. Work is convention-driven, acceptance
 
 **Do not code (4) before `DERIVATION.md` exists (2).** The plan (3) must cite it.
 
-## Handoff: review is a separate workflow
-Production **ends** when `VERIFICATION.md` is green. Before the result is declared final it goes
-through the independent `review-workflow` (self-review → adversarial audit). Review is deliberately
-*not* a pipeline stage: the reviewer must not inherit the producer's assumptions, so it starts fresh
-and treats the pipeline's documents as claims to check, not evidence.
+## Handoff
+Production ends when `VERIFICATION.md` is green. Reviewing the finished result is its own mode —
+`review-workflow` (self-review → adversarial audit).
 
 ## The firewall (non-negotiable)
 **Never promote exploration code.** If a result came from `exploration-mode`, that told you *where to

@@ -1,6 +1,6 @@
 ---
 name: external-anchor-doctrine
-description: Use when a result depends on constants, calibration factors, or an internal round-trip that could be self-consistent yet wrong — when a closed loop "agrees with itself" but nothing outside the pipeline pins the value. Triggers on 定标, 外部锚, closed loop, self-consistent, calibration, benchmark, "agrees with itself", "validates itself".
+description: Use when a result depends on constants, calibration factors, or an internal round-trip that could be self-consistent yet wrong — when a closed loop "agrees with itself" but nothing outside the pipeline pins the value. Triggers on 定标, 外部锚, 外部基准, 交叉验证, 自洽但可能错, 对标文献, closed loop, self-consistent, circular validation, calibration, benchmark, "agrees with itself", "validates itself", "cross-check against literature", "independent reference".
 ---
 
 # External-Anchor Doctrine

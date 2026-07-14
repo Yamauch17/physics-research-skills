@@ -22,7 +22,7 @@
   "interface": {
     "displayName": "Physics Research",
     "shortDescription": "Read / explore / production research workflow for physics.",
-    "longDescription": "Three research modes (literature-reading notes, cheap traceable exploration, a trustworthy 6-stage production pipeline) plus an independent review workflow (self-review then adversarial audit) and derivation, verification, figure, and git discipline. Subject-agnostic core; pair with a domain pack.",
+    "longDescription": "Four research modes (literature-reading notes, cheap traceable exploration, a trustworthy 6-stage production pipeline, and two-level review: self-review then adversarial audit) plus derivation, verification, figure, and git discipline. Subject-agnostic core; pair with a domain pack.",
     "developerName": "Yamauch17",
     "category": "Productivity",
     "capabilities": [

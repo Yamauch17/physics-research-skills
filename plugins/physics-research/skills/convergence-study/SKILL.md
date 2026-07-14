@@ -1,6 +1,6 @@
 ---
 name: convergence-study
-description: Use when a numerical physics result depends on a discretization or truncation — a mesh, grid, system size, basis size, time step, or expansion order — and you must show it is converged. Triggers on convergence, 收敛, mesh, grid, system size, time step, truncation, cutoff, "is it converged", extrapolation, refinement.
+description: Use when a numerical physics result depends on a discretization or truncation — a mesh, grid, system size, basis size, time step, or expansion order — and you must show it is converged. Triggers on convergence, 收敛, 收敛性检查, 网格加密, 有限尺寸, 步长, 截断误差, mesh, grid, grid refinement, system size, finite-size scaling, time step, truncation, cutoff, basis size, "is it converged", "converged with respect to", extrapolation, refinement.
 ---
 
 # Convergence Study

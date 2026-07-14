@@ -1,6 +1,6 @@
 ---
 name: convention-driven-coding
-description: Use when writing code for a derived model — implementing the governing equations, observables, or derived quantities — where every symbol must match the derivation's conventions and the object must satisfy structural invariants. Triggers on 写代码, implement the model, "code the equations", "build the operator", turning a derivation into code.
+description: Use when writing code for a derived model — implementing the governing equations, observables, or derived quantities — where every symbol must match the derivation's conventions and the object must satisfy structural invariants. Triggers on 写代码, 实现模型, 把公式写成代码, 按推导实现, 编程实现, implement the model, "implement the Hamiltonian", "code the equations", "translate the equations to code", "build the operator", "write the solver", turning a derivation into code.
 ---
 
 # Convention-Driven Coding (Stage 4)

@@ -1,6 +1,6 @@
 ---
 name: kp-effective-model
-description: Use when deriving or using a k·p or effective low-energy model — expanding around a band extremum and folding out remote bands to get an effective Hamiltonian such as a Dirac or BHZ model. Triggers on k·p, kp, 有效模型, 低能模型, Löwdin, Schrieffer-Wolff, envelope function, effective Hamiltonian, BHZ from Kane.
+description: Use when deriving or using a k·p or effective low-energy model — expanding around a band extremum and folding out remote bands to get an effective Hamiltonian such as a Dirac or BHZ model. Triggers on k·p, kp, 有效模型, 低能模型, 低能展开, 包络函数, 微扰折叠, Löwdin, Schrieffer-Wolff, downfolding, quasi-degenerate perturbation, envelope function, effective Hamiltonian, "low-energy expansion", "effective Dirac model", "expand around the band edge", BHZ from Kane.
 ---
 
 # k·p Effective Models

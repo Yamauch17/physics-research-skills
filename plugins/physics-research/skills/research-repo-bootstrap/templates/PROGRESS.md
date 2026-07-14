@@ -15,6 +15,6 @@
 ## Phase 2 — <name>   (acceptance: <gate>)
 - [ ] ...
 
-## Review — independent workflow, run on the finished result (review-workflow)
+## Review — run on the finished result (review-workflow)
 - [ ] self-review sign-off (research-review)
 - [ ] adversarial audit before anything leaves the project (adversarial-review)

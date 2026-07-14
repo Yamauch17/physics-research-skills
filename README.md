@@ -7,12 +7,12 @@ touching the core. The skills follow the open [Agent Skills](https://agentskills
 format, so they also work in other agents (Codex, Cursor, Copilot CLI, Gemini CLI, …).
 
 > **中文速览:** 面向物理科研的 Claude Code 技能集。核心插件 `physics-research`(25 个技能,**对所有物理学科通用**)
-> 把科研分成三种模式——**读**(文献→严谨笔记)、**探索**(低成本、可追溯的快速试探)、**生产**(可信、可发表的
-> 六阶段流水线)——外加独立于生产的**评审**工作流(自查 → 对抗性审稿);领域插件 `topological-insulator`(9 个技能)提供拓扑绝缘体的具体方法(紧束缚 H(k)、陈数、Z2、
+> 把科研分成四种模式——**读**(文献→严谨笔记)、**探索**(低成本、可追溯的快速试探)、**生产**(可信、可发表的
+> 六阶段流水线)、**评审**(自查 → 对抗性审稿);领域插件 `topological-insulator`(9 个技能)提供拓扑绝缘体的具体方法(紧束缚 H(k)、陈数、Z2、
 > 边缘态……)。核心里不出现 H(k) 这类学科专属内容——它们只属于领域插件。技能靠描述里的触发词**自动激活**。
 > 安装方法见下方 “Install & use in your agent”(支持 Claude Code / Codex / Cursor / Copilot / Gemini 等)。
 
-## The idea: three research modes
+## The idea: four research modes
 
 Every task runs in one mode; picking the wrong one is where research time is wasted or trust is lost.
 The `research-mode-router` skill routes you:
@@ -25,9 +25,8 @@ The `research-mode-router` skill routes you:
 | **Review** | judge a finished result / repo / manuscript | sign-off or referee report |
 
 A hard **firewall** separates them: exploration code tells you *where to look*, never *what the answer
-is*. Trusted results are re-derived from scratch through a 6-stage production pipeline. **Review** is
-an independent workflow, not a production stage — it runs fresh on the finished result, at two levels
-(self-review, then a hostile adversarial audit).
+is*. Trusted results are re-derived from scratch through a 6-stage production pipeline. **Review**
+runs on the finished result at two levels (self-review, then a hostile adversarial audit).
 
 ## Architecture: core + domain packs
 
@@ -119,7 +118,7 @@ This checks that all 34 `SKILL.md` files parse and each skill's `name` matches i
 `production-mode`
 **Production pipeline (6 stages):** `literature-review-conventions` · `physics-brainstorming` ·
 `theory-derivation` · `implementation-planning` · `convention-driven-coding` · `physical-verification`
-**Review workflow (independent):** `review-workflow` · `research-review` · `adversarial-review`
+**Review:** `review-workflow` · `research-review` · `adversarial-review`
 **Rigor & infrastructure:** `convention-table` · `dimensional-analysis` · `numerical-spot-check` ·
 `external-anchor-doctrine` · `convergence-study` · `prl-figure-style` · `jupytext-notebook-workflow` ·
 `findings-logger` · `phased-git-workflow` · `obsidian-safe-markdown` ·

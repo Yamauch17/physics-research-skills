@@ -5,7 +5,7 @@ Auto-activating **Agent Skills** under `./skills/` (open Agent Skills format: ea
 
 Entry point: `research-mode-router`, which routes between **Read** (`literature-reading-notes`),
 **Explore** (`exploration-mode`), **Produce** (`production-mode`, the 6-stage pipeline), and
-**Review** (`review-workflow`, the independent self-review → adversarial-audit workflow).
+**Review** (`review-workflow`, self-review → adversarial audit).
 
 Skill instructions use Claude Code tool names (Read/Write/Edit/Bash/Grep/Glob); use your platform's
 equivalents — see the tool-name mapping in the repo README.

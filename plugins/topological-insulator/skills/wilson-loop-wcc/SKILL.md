@@ -1,6 +1,6 @@
 ---
 name: wilson-loop-wcc
-description: Use when computing Wilson loops, Wannier charge centers, or hybrid-WCC flow to diagnose band topology. Triggers on Wilson loop, 威尔逊环, Wannier charge center, WCC, hybrid Wannier, holonomy, WCC flow, non-abelian Berry phase.
+description: Use when computing Wilson loops, Wannier charge centers, or hybrid-WCC flow to diagnose band topology. Triggers on Wilson loop, 威尔逊环, 瓦尼尔电荷中心, 瓦尼尔中心流, 极化, Wannier charge center, WCC, hybrid Wannier, holonomy, WCC flow, Wilson loop spectrum, Zak phase, polarization, non-abelian Berry phase.
 ---
 
 # Wilson Loops & Wannier Charge Centers

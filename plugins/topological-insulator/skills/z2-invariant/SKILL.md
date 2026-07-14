@@ -1,6 +1,6 @@
 ---
 name: z2-invariant
-description: Use when computing a Z2 topological invariant for a time-reversal-invariant insulator in 2D or 3D. Triggers on Z2, 拓扑不变量, 时间反演不变量, Fu-Kane, Kane-Mele, parity invariant, partner switching, strong/weak topological insulator, ν0.
+description: Use when computing a Z2 topological invariant for a time-reversal-invariant insulator in 2D or 3D. Triggers on Z2, Z2 不变量, 拓扑不变量, 时间反演不变量, 量子自旋霍尔, 宇称判据, Fu-Kane, Kane-Mele, parity invariant, parity criterion, TRIM, time-reversal polarization, partner switching, quantum spin Hall, QSH, strong/weak topological insulator, ν0, "compute Z2".
 ---
 
 # Z2 Invariant

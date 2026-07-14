@@ -6,10 +6,9 @@ description: Use when reviewing your own result before declaring it final — ch
 # Research Review (Self-Review)
 
 ## Overview
-Level 1 of the independent `review-workflow`: the self-review gate before a result is called final.
-This is *your own* critical pass; the hostile external audit is Level 2 — see `adversarial-review`.
-Review is separate from production: for a result out of the production pipeline, run this only after
-`physical-verification` is green, and treat the pipeline's documents as claims to re-check.
+Level 1 of `review-workflow`: the self-review gate before a result is called final. This is *your
+own* critical pass; the hostile external audit is Level 2 — see `adversarial-review`. For a result
+out of the production pipeline, run this only after `physical-verification` is green.
 
 ## Code level
 - **Readability & reuse:** would another person (or you in six months) follow it? Duplicated logic

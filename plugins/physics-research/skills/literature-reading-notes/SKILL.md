@@ -1,6 +1,6 @@
 ---
 name: literature-reading-notes
-description: Use when reading a paper, textbook, lecture slides (PDF/PPT), or code to understand it and capture thorough study notes, especially when complete step-by-step derivations and physical intuition are wanted. Triggers on 读论文, 做笔记, 讲义, 看代码, "read this paper", "take notes", "explain this derivation", "understand this code".
+description: Use when reading a paper, textbook, lecture slides (PDF/PPT), or code to understand it and capture thorough study notes, especially when complete step-by-step derivations and physical intuition are wanted. Triggers on 读论文, 精读, 做笔记, 讲义, 课件, 教材, 看代码, 帮我理解, 逐步推导, "read this paper", "study this paper", "take notes", "walk me through", "explain this derivation", "what does this paper do", "understand this code", "read this chapter".
 ---
 
 # Literature Reading → Notes (Read mode)

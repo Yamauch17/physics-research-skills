@@ -1,6 +1,6 @@
 ---
 name: edge-states-bulk-boundary
-description: Use when computing edge or surface states, ribbon or open-boundary spectra, or checking bulk-boundary correspondence by counting in-gap modes. Triggers on edge states, surface states, 边缘态, 表面态, ribbon, open boundary, OBC, bulk-boundary correspondence, 体边对应, in-gap states, domain wall.
+description: Use when computing edge or surface states, ribbon or open-boundary spectra, or checking bulk-boundary correspondence by counting in-gap modes. Triggers on edge states, surface states, 边缘态, 表面态, 纳米带, 条带计算, 零能模, 拓扑边缘态, ribbon, zigzag, armchair, slab, open boundary, OBC, bulk-boundary correspondence, 体边对应, in-gap states, zero modes, helical edge, chiral edge, surface Dirac cone, domain wall.
 ---
 
 # Edge States & Bulk-Boundary Correspondence

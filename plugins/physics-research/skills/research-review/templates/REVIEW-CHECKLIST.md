@@ -1,6 +1,6 @@
 # REVIEW — <result> (self-review, review-workflow Level 1)
 
-> Independent of production. For a production result, run after physical-verification is green.
+> For a production result, run after physical-verification is green.
 > Your own critical pass; the hostile audit is adversarial-review (Level 2).
 
 ## Code

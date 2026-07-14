@@ -1,6 +1,6 @@
 ---
 name: physical-verification
-description: Use when a computed physics result must be verified independently of the code before it is trusted or published. Triggers on 物理验证, 五项检查, verify the result, "is this right", "before I trust this", convergence check, symmetry check, self-consistency check, sanity check a result.
+description: Use when a computed physics result must be verified independently of the code before it is trusted or published. Triggers on 物理验证, 五项检查, 验证结果, 结果对不对, 检查物理, 已知极限, verify the result, "is this right", "verify independently", "before I trust this", "check against a known limit", convergence check, symmetry check, self-consistency check, sanity check a result.
 ---
 
 # Physical Verification (Stage 5)

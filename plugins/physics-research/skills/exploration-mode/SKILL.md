@@ -1,6 +1,6 @@
 ---
 name: exploration-mode
-description: Use when you do not yet know what the answer looks like and want a cheap fast check — scanning parameters, a quick plot, tweaking a term in the model, sanity-checking an intuition or a dimension. Triggers on 快速看看, 试一下, 扫参数, "quick check", "does this look right", "let me try", "sanity check", "rough idea", "poke at".
+description: Use when you do not yet know what the answer looks like and want a cheap fast check — scanning parameters, a quick plot, tweaking a term in the model, sanity-checking an intuition or a dimension. Triggers on 快速看看, 试一下, 随便试试, 扫参数, 看看趋势, 大概什么样, 探索一下, "quick check", "quick and dirty", "does this look right", "let me try", "just curious", "play around", "sanity check", "rough idea", "poke at", "eyeball it", "what happens if".
 ---
 
 # Exploration Mode

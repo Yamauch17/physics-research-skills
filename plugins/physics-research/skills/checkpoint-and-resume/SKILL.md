@@ -1,6 +1,6 @@
 ---
 name: checkpoint-and-resume
-description: Use during any multi-step task that could be interrupted by a token limit, lost charge, or session end — persist each finished unit immediately and keep a resume protocol so nothing done is ever lost. Triggers on 断点续传, checkpoint, resume, "don't lose work", save progress, long task, "in case it stops", batch of files.
+description: Use during any multi-step task that could be interrupted by a token limit, lost charge, or session end — persist each finished unit immediately and keep a resume protocol so nothing done is ever lost. Triggers on 断点续传, 断点, 续跑, 接着做, 中断恢复, 上次做到哪, checkpoint, resume, "pick up where we left off", "continue the task", "don't lose work", "save state", save progress, long task, token limit, "in case it stops", batch of files.
 ---
 
 # Checkpoint & Resume

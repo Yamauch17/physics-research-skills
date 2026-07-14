@@ -1,6 +1,6 @@
 ---
 name: phased-git-workflow
-description: Use when locking in research results incrementally so nothing finished is ever uncommitted. Triggers on commit results, 提交结果, lock in, phase gate, git tag, "save this phase", "record progress", acceptance gate.
+description: Use when locking in research results incrementally so nothing finished is ever uncommitted. Triggers on commit results, 提交结果, 阶段提交, 打标签, 锁定结果, 里程碑, lock in, phase gate, git tag, "commit each phase", "tag the milestone", "save this phase", "record progress", "don't lose results", acceptance gate.
 ---
 
 # Phased Git Workflow

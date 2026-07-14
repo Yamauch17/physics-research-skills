@@ -1,6 +1,6 @@
 ---
 name: dimensional-analysis
-description: Use before trusting any number and as the first check on any derived expression — when a formula, result, or code output could have a units or dimension error, or when two derivations disagree and you need the fast arbiter. Triggers on 量纲, 单位, order of magnitude, "right units?", "dimensionally", "factor of", unit mismatch.
+description: Use before trusting any number and as the first check on any derived expression — when a formula, result, or code output could have a units or dimension error, or when two derivations disagree and you need the fast arbiter. Triggers on 量纲, 量纲分析, 单位, 单位不对, 数量级, 差了个系数, order of magnitude, "check the units", "right units?", "dimensionally", "does the magnitude make sense", "factor of", "off by", unit mismatch, dimensional check.
 ---
 
 # Dimensional Analysis

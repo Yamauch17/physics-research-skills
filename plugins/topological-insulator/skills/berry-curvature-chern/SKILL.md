@@ -1,6 +1,6 @@
 ---
 name: berry-curvature-chern
-description: Use when computing the Berry connection, Berry curvature, or a Chern number of a band. Triggers on Berry curvature, Berry phase, Chern number, 陈数, 贝里曲率, TKNN, Fukui-Hatsugai-Suzuki, FHS, plaquette, anomalous Hall.
+description: Use when computing the Berry connection, Berry curvature, or a Chern number of a band. Triggers on Berry curvature, Berry phase, Berry connection, Chern number, 陈数, 贝里曲率, 贝里相位, 贝里联络, 陈绝缘体, 霍尔电导, "compute the Chern number", TKNN, Fukui-Hatsugai-Suzuki, FHS, plaquette, anomalous Hall, quantum anomalous Hall, QAH, Hall conductance.
 ---
 
 # Berry Curvature & Chern Number

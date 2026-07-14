@@ -1,6 +1,6 @@
 ---
 name: convention-table
-description: Use when starting a derivation or code that involves sign conventions, transform conventions, index/component ordering, a reference point, or a unit system — anywhere an implicit convention could silently differ between your derivation, your code, and the literature. Triggers on 约定, 符号约定, sign convention, index order, gauge, unit system, "which convention", ħ=1, c=1.
+description: Use when starting a derivation or code that involves sign conventions, transform conventions, index/component ordering, a reference point, or a unit system — anywhere an implicit convention could silently differ between your derivation, your code, and the literature. Triggers on 约定, 符号约定, 约定表, 正负号, 傅里叶约定, 相位约定, 单位制, sign convention, Fourier convention, index order, index convention, gauge choice, unit system, "which convention", "sign of the", "plus or minus", ħ=1, c=1.
 ---
 
 # Convention Table

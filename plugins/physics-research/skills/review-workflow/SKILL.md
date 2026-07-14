@@ -6,10 +6,8 @@ description: Use whenever a finished result, repo, figure, or manuscript should 
 # Review Workflow
 
 ## Overview
-Review is an **independent workflow, not a production stage**. It runs on a *finished* result — one
-produced by `production-mode` here, or by anyone else's repo — and it is deliberately decoupled from
-production so the reviewer role never inherits the producer's assumptions. This skill picks the review
-level; each level has its own skill.
+Review runs on a *finished* result — one produced by `production-mode` here, or by anyone else's
+repo. This skill picks the review level; each level has its own skill.
 
 ## The two levels
 
@@ -26,16 +24,15 @@ level; each level has its own skill.
   independent re-derivation before reading the project's own.
 - Escalate 1 → 2; never substitute 1 for 2 on anything leaving the project.
 
-## Independence rules (non-negotiable)
-- **Producer ≠ reviewer mindset.** Enter review fresh: the production pipeline's docs
-  (`DERIVATION.md`, `VERIFICATION.md`) are *inputs to be checked*, not evidence to be trusted.
+## Ground rules
+- **Enter review fresh.** The project's own docs (`DERIVATION.md`, `VERIFICATION.md`) are *inputs to
+  be checked*, not evidence to be trusted.
 - **Entry gate for your own production results:** do not start review before `physical-verification`
   is green — review judges a finished result, it is not a substitute for verification.
 - **Review does not fix.** Findings go in the report with `file:line`; changing project code is a
   separate, after-the-review decision.
 
 ## Common mistakes
-- Treating review as the last stage of production — it is a separate workflow with a separate mindset.
 - Skipping Level 1 because "the adversarial review will catch it anyway" — Level 1 is cheap and
   catches the overstatements you can see yourself.
 - Running Level 2 on your own result while still in producer mode — reuse of your own conventions and

@@ -1,6 +1,6 @@
 ---
 name: prl-figure-style
-description: Use when producing figures for a paper, report, or slides that should look publication-ready. Triggers on 画图, 出图, figure style, publication figure, PRL figure, APS, matplotlib style, panel labels, "make this figure nice".
+description: Use when producing figures for a paper, report, or slides that should look publication-ready. Triggers on 画图, 出图, 论文图, 期刊图, 图美化, 配图, figure style, publication figure, publication-quality, PRL figure, APS, "figure for the paper", "figure for the manuscript", matplotlib style, panel labels, tick style, font size, "make this figure nice".
 ---
 
 # PRL-Ready Figure Style

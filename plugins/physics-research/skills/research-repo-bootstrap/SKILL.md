@@ -1,6 +1,6 @@
 ---
 name: research-repo-bootstrap
-description: Use when starting a new research project or repository and it needs the standard structure, session bootstrap, and conventions in place. Triggers on new project, 新建项目, scaffold repo, bootstrap, "set up a research repo", "start a new study", project skeleton.
+description: Use when starting a new research project or repository and it needs the standard structure, session bootstrap, and conventions in place. Triggers on new project, 新建项目, 建仓库, 初始化项目, 项目结构, 开新课题, scaffold repo, bootstrap, "set up a research repo", "start a new study", "initialize the project", "new repo for", project skeleton, project template.
 ---
 
 # Research Repo Bootstrap

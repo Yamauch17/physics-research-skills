@@ -1,6 +1,6 @@
 ---
 name: jupytext-notebook-workflow
-description: Use when producing results as Jupyter notebooks that must stay reproducible and diff-able in git. Triggers on notebook, jupyter, jupytext, 笔记本, reproducible notebook, "run the notebook", nbconvert, execute notebook, assert cell.
+description: Use when producing results as Jupyter notebooks that must stay reproducible and diff-able in git. Triggers on notebook, jupyter, jupytext, ipynb, 笔记本, 可复现笔记本, 运行笔记本, reproducible notebook, percent script, paired notebook, "run the notebook", "make a notebook", nbconvert, execute notebook, assert cell.
 ---
 
 # Jupytext Notebook Workflow
